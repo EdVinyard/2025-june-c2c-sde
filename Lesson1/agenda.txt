@@ -1,0 +1,6 @@
+1. Technology Check
+2. Introduce Ourselves
+3. Variables
+4. Data Types
+5. Comments
+6. Exit Ticket

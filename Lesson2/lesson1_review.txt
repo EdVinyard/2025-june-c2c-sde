@@ -1,0 +1,18 @@
+
+Which of these variables is assigned a string value?
+--------------------------------------------------------------------
+
+has_sprinkles = False   # Boolean
+cake_layers = 2         # integer (whole number)
+flavor = 'orange'       # string
+cups_of_flour = 1.75    # float pointing
+
+
+
+Which of the following 4 lines does NOT contain a comment?
+--------------------------------------------------------------------
+
+TODO: Print all possible cake flavors the user may choose.
+# Print cake ingredients, in the order they'll be used.
+custom_cake_price = 55 # price per baker hour in US Dollars
+### calculate total custom cake price, including tax

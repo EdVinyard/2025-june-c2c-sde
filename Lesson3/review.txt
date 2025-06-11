@@ -1,0 +1,20 @@
+----------------------------------------------------------------
+What is the error in the following code?
+
+    flour_cups = 2
+    print(2 + ' cups of flour')
+
+How can you fix the error?
+
+
+----------------------------------------------------------------
+To display output from your program, what built-in function do you call?
+
+----------------------------------------------------------------
+What's the difference between the following two functions?
+
+    def say_hello():
+        print('Hello!')
+
+    def greeting():
+        return 'Hello!'

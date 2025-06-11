@@ -1,0 +1,12 @@
+1. Open your existing codespace.
+
+2. Create a new Python file in the lesson 3 folder named "do_now.py".
+
+3. Create two variables:
+    - favorite_season
+    - favorite_temperature
+
+4. Output a message using the print() function, string concatenation (+) and
+   the string conversion function str() that reads as follows.
+
+    My favorite season is ____ and I love when it is ___ degrees outside.
