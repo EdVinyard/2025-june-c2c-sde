@@ -1,10 +1,10 @@
-from random import randrange
+import random
 playAgain = "Yes"
 
 while playAgain == "Yes":
   playerChoice = input("Choose: Rock, Paper, or Scissors: ")
   choices = ["Rock","Paper","Scissors"]
-  computerChoice = choices[randrange(3)]
+  computerChoice = random.choice(choices)
   print("The computer chose " + computerChoice)
   print("You chose " + playerChoice)
   if computerChoice == playerChoice:
