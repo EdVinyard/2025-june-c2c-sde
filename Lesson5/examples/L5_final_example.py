@@ -1,43 +1,38 @@
 import random
 
 name = input('What is your name? ')
+print('Welcome to the INTERGALACTIC Escape Room, ' + name + '!')
 
-#custom theme = space
-print(f'Welcome to the INTERGALACTIC Escape Room, {name}!')
-
-door = input('Please choose a door (1, 2, or 3): ')
-
+# Choose a door
+door = input('Choose a door. (1, 2, or 3) ')
 correct_door = random.choice(['1', '2', '3'])
 
 if door == correct_door:
-  print('You escaped!')
+    print('You escaped!')
 else:
-  print('You did not escape :(')
+    print('You did not escape :(')
 
-
-#password puzzle + description message
+# password puzzle
 print('You enter an empty dark room...')
 print()
 print('There is something glowing in the corner. ')
 
-#space theme: asteroid, planet, star, moon, astronaut, sun
-options = ['asteroid', 'planet', 'star', 'moon', 'astronaut', 'sun']
+possible_passwords = ['asteroid', 'planet', 'star', 'moon', 'astronaut', 'sun']
+correct_password = random.choice(possible_passwords)
 
-correct_password = random.choice(options)
+for word in possible_passwords:
+    if word == correct_password:
+        print(word + ' 😉')
+    else:
+        print(word)
 
-for word in options:
-  if word == correct_password:
-    print(word.capitalize())
-  else:
-    print(word)
-
-print('In front of you, you see a computer terminal asking you for a password.') #custom message
-
-password_guess = input('Choose the password from the list. ')
+print('You see a computer terminal asking for a password.')
+password_guess = input('Enter the password. ')
 
 if password_guess == correct_password:
-  print('The computer begins to glow.')
-  print('The wall in front of you sinks into the ground, revealing a getaway space craft! ')
-  print('You have escaped!')
+    print('The computer begins to glow.')
+    print('The wall in front of you sinks into the ground...')
+    print('revealing a getaway space craft!')
+    print('You have escaped!')
 else:
-  print('Capitalization is key! Try again! ')
+    print('Incorrect password! Try again!')
