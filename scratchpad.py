@@ -1,6 +1,4 @@
-color = 'red'
-print(color)
-color = 'green'
-print(color)
-color = 'blue'
-print(color)
+keeper = ''
+
+while keeper != 'quit':
+    keeper = input('What next?')

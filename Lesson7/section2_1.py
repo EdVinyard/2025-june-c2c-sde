@@ -10,3 +10,6 @@ room = [
 ]
 
 # What are the (row, column) coordinates of the exit (e)?
+player_row = 3
+print(room[player_row])
+player_col = 3

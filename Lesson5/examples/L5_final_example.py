@@ -1,38 +1,42 @@
 import random
 
 name = input('What is your name? ')
-print('Welcome to the INTERGALACTIC Escape Room, ' + name + '!')
 
-# Choose a door
-door = input('Choose a door. (1, 2, or 3) ')
+#custom theme = space
+print(f'Welcome to the INTERGALACTIC Escape Room, {name}!')
+
+door = input('Please choose a door (1, 2, or 3): ')
+
 correct_door = random.choice(['1', '2', '3'])
 
-if door == correct_door:
-    print('You escaped!')
-else:
-    print('You did not escape :(')
+while door!= correct_door:
+  door = input('Nope, try again! 1, 2, or 3 ')
 
-# password puzzle
+#intro to password puzzle + description message
 print('You enter an empty dark room...')
-print()
-print('There is something glowing in the corner. ')
+print(' ')
+print('There is something glowing in the corner')
 
-possible_passwords = ['asteroid', 'planet', 'star', 'moon', 'astronaut', 'sun']
-correct_password = random.choice(possible_passwords)
+#space theme: asteroid, planet, star, moon, astronaut, sun
+options = ['asteroid', 'planet', 'star', 'moon', 'astronaut', 'sun']
 
-for word in possible_passwords:
-    if word == correct_password:
-        print(word + ' 😉')
-    else:
-        print(word)
+correct_password = random.choice(options)
 
-print('You see a computer terminal asking for a password.')
-password_guess = input('Enter the password. ')
+for word in options:
+  if word == correct_password:
+    print(word.capitalize())
+  else:
+    print(word)
 
-if password_guess == correct_password:
-    print('The computer begins to glow.')
-    print('The wall in front of you sinks into the ground...')
-    print('revealing a getaway space craft!')
-    print('You have escaped!')
-else:
-    print('Incorrect password! Try again!')
+print('In front of you, you see a computer terminal asking you for a password. ') #custom message
+
+password_guess = input('Choose the password from the list. ')
+
+while password_guess != correct_password:
+  print('Incorrect password. Try again. ')
+  password_guess = input('Password: ')
+
+#custom space theme escape messages
+print('The computer begins to glow. ')
+print('The wall in front of you sinks into the ground, revealing a getaway space craft! ')
+print('You have escaped! ')
