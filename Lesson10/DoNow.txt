@@ -1,0 +1,7 @@
+Your game needs a hook at the beginning!  For example, does the player...
+
+- get lost in a forest?
+- try to escape an enchanted dungeon?
+- fall asleep in their school library and wake up with everyone gone?
+
+I'll call on a few of you to share the theme you've chosen.

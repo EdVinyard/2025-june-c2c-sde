@@ -1,0 +1,7 @@
+Yesterday, we...
+    1) validated user input (allow only up, down, left, or right), and
+    2) stopped wall collisions
+
+Today, we will...
+    1) tell the user when they are next to walls BEFORE they move, and
+    2) add our choose-a-door and guess-the-password puzzles to our mazes.

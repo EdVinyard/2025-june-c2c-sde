@@ -31,10 +31,13 @@ def move(current_row, current_col, direction):
 def announce_walls(r, c):
     if ROOM[r-1][c] == 'x':
         print('There is a wall up from you.')
+
     if ROOM[r+1][c] == 'x':
         print('There is a wall down from you.')
+
     if ROOM[r][c-1] == 'x':
         print('There is a wall left from you.')
+
     if ROOM[r][c+1] == 'x':
         print('There is a wall right of you.')
 

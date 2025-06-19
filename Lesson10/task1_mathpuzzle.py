@@ -2,9 +2,9 @@ import random
 
 ROOM = [
     'xxxxx',
-    'x.pex',
-    'x...x',
-    'x...x',
+    'x..mx',
+    'x.xpx',
+    'x.xex',
     'xxxxx',
     ]
 
@@ -66,19 +66,39 @@ def move(current_row, current_col, direction):
 def announce_walls(r, c):
     if ROOM[r-1][c] == 'x':
         print('There is a wall up from you.')
-
     if ROOM[r+1][c] == 'x':
         print('There is a wall down from you.')
-
     if ROOM[r][c-1] == 'x':
         print('There is a wall left from you.')
-
     if ROOM[r][c+1] == 'x':
         print('There is a wall right of you.')
 
-name = input('What is your name? ')
-print('Welcome to the INTERGALACTIC Escape Room, ' + name + '!')
+def welcome():
+    name = input('What is your name? ')
+    print('----------------------------------------------------------------------')
+    print(r'''
+                           .-.
+            .-""`""-.    |(@ @)
+         _/`oOoOoOoOo`\_ \ \-/
+        '.-=-=-=-=-=-=-.' \/ \
+          `-=.=-.-=.=-'    \ /\
+             ^  ^  ^       _H_ \
+    ''') # from https://www.asciiart.eu/space/aliens by JGS
+    print('Welcome to the INTERGALACTIC Escape Room, ' + name + '!')
+    print('We do not expect much from a puny earthling...')
+    print('but we will give you a chance to escape.')
+    print('----------------------------------------------------------------------')
 
+def math_puzzle():
+    print(          "2 + 2")
+    correct_answer = '4'
+    user_answer = -1
+    while user_answer != correct_answer:
+        user_answer = input('What is the sum? ')
+        if user_answer != correct_answer:
+            print('Incorrect.  Try again.')
+
+welcome()
 row, col = 3, 1
 print('position: ' + str(row) + ', ' + str(col))
 announce_walls(row, col)
@@ -91,6 +111,8 @@ while ROOM[row][col] != 'e':
 
     if ROOM[row][col] == 'p':
         puzzles()
+    elif ROOM[row][col] == 'm':
+        math_puzzle()
 
     announce_walls(row, col)
 

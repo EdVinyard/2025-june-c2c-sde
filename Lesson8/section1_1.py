@@ -24,6 +24,8 @@ def move(current_row, current_col, direction):
 
 
 new_row, new_col = move(2, 2, 'up')
+# row, col = [1, 2]
+
 # At this point, new_position should be the list [1, 2]
 
 print('New row is ' + str(new_row))

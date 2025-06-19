@@ -7,9 +7,9 @@ room = [
 ]
 
 
-def move(current_row, current_col, direction):
-    new_row = current_row
-    new_col = current_col
+def move(old_row, old_col, direction):
+    new_row = old_row
+    new_col = old_col
 
     if direction == 'up':
         new_row -= 1
@@ -23,9 +23,9 @@ def move(current_row, current_col, direction):
         print('invalid direction: ' + direction)
 
     if room[new_row][new_col] == 'x':
-        print('Ouch! You bump into a wall.')
-        new_row = current_row
-        new_col = current_col
+        print('Ouch!  You bumped into a wall.')
+        new_row = old_row
+        new_col = old_col
 
     return new_row, new_col
 
