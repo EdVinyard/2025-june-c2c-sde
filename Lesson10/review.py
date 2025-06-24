@@ -1,4 +1,5 @@
 # (1) What will the following code print? -------------------------------------
+
 places = [
   ['Bakersfield', 'San Francisco', 'Los Angeles', 'Redding'],
   ['Waco', 'Austin', 'Marfa', 'Dallas', 'Abilene'],
@@ -8,6 +9,7 @@ print(places[0][1])
 print(places[0][1][2])
 
 # (2) What will the following code print? -------------------------------------
+
 room = ['xxxxx',
         'x.p.x',
         'xd.ex',
