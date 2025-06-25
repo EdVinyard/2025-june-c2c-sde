@@ -6,7 +6,7 @@ class Rectangle:
     def area_sq_mm(self):
         return self.length_mm * self.width_mm
 
-class Square(Rectangle):
+class Square(Rectangle):                        # Specialization of Rectangle
     def __init__(self, side_mm):
         super().__init__(side_mm, side_mm)
 

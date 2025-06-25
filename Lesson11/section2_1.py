@@ -1,15 +1,17 @@
+import math
+
 class Rectangle:
     def __init__(self, length_mm, width_mm):
-        self.length_mm = length_mm
-        self.width_mm = width_mm
+        self.length_mm = length_mm              # attribute (AKA field)
+        self.width_mm  = width_mm               # attribute (AKA field)
 
-    def area_sq_mm(self):
+    def area_sq_mm(self):                       # method definition
         return self.length_mm * self.width_mm
 
 
-longer = Rectangle(60.0, 10.0)
-print(longer.area_sq_mm())            # 600.0
-wider = Rectangle(20.0, 50.0)
-print(wider.area_sq_mm())             # 1000.0
-square = Rectangle(30.0, 30.0)
-print(square.area_sq_mm())            # 900.0
+longer = Rectangle(6.0, 1.0)
+print(longer.area_sq_mm())            #  6.0
+wider = Rectangle(2.0, 5.0)
+print(wider.area_sq_mm())             # 10.0
+square = Rectangle(3.0, 3.0)
+print(square.area_sq_mm())            #  9.0
