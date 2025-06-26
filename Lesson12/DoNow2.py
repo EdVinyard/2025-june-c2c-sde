@@ -21,7 +21,7 @@ class Product:
         self.price = price
         self.total = total
 
-    def print(self):
+    def display(self):
         print("----------------------------")
         print('product ID', self.id)
         print('type:', self.type)
@@ -76,7 +76,7 @@ def user_selection():
 def display_inventory():
     print("\n **GEN-Z STORE INVENTORY**")
     for product in store_inventory:
-        product.print()
+        product.display()
     print("___________________________")
 
 # add a new product function
