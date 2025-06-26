@@ -6,28 +6,31 @@ It allows a user to:
 3. remove products from the inventory
 """
 ############################################################################
-# Section 1 - Import Modules and Global Variables
+# Section 1 - Import Modules
 ###########################################################################
 import random  # used to generate random product ID
 
 #####################################################################################
-# Section 3 - Class Definition
+# Section 2 - Class Definition
 ######################################################################################
 class Product:
     # constructor method used to instantiate any new class
     def __init__(self, type, price, total):
-        self.product_id = random.randint(1000, 5000)  # new attribute added
+        self.id = random.randint(1000, 5000)  # new attribute added
         self.type = type
         self.price = price
         self.total = total
 
     def print(self):
         print("----------------------------")
-        print('product_id', self.product_id)
+        print('product ID', self.id)
         print('type:', self.type)
         print('price:', self.price)
         print('total:', self.total)
 
+##############################################################################
+# Section 3 - Global Variables
+#############################################################################
 store_inventory = [  # sample store inventory
     Product('Shoes', 100.0, 20),
     Product('Tshirts', 43.5, 32),
@@ -37,11 +40,8 @@ store_inventory = [  # sample store inventory
     Product('Dress', 50.0, 10),
     ]
 
-# used to check on program status: True means running and False means stop running
-program_loop = True
-
 ##############################################################################
-# Section 2 - Functions Definition
+# Section 4 - Functions Definition
 #############################################################################
 
 # Displays the main menu
@@ -120,7 +120,7 @@ def remove_product():
 
     found = False
     for product in store_inventory:
-        if product.product_id == PID:
+        if product.id == PID:
             found = True
             store_inventory.remove(product)
             print("Product was successfully removed from the store inventory.")
@@ -130,8 +130,9 @@ def remove_product():
         print("This is not in the inventory. Try again.")
 
 ##################################################################################
-# Section 4 - Running Section
+# Section 5 - Running Section
 ##################################################################################
+program_loop = True
 while program_loop:
     display_menu()
     program_loop = user_selection()
