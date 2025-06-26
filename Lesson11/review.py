@@ -1,11 +1,13 @@
-# -----------------------------------------------------------------------------
+# ------------------------------------------------------------------------
 # (1) How can we include an apostrophe in a string literal?
 
 # See Python Documentation on String Literals
 # https://docs.python.org/3/tutorial/introduction.html#text
 
+s = 'can't'
+s = "can't"
 
-# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------
 # (2) What will the following code print?
 import random
 

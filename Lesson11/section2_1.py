@@ -2,10 +2,10 @@ import math
 
 class Rectangle:
     def __init__(self, length_mm, width_mm):
-        self.length_mm = length_mm              # attribute (AKA field)
-        self.width_mm  = width_mm               # attribute (AKA field)
+        self.length_mm = length_mm
+        self.width_mm  = width_mm
 
-    def area_sq_mm(self):                       # method definition
+    def area_sq_mm(self):
         return self.length_mm * self.width_mm
 
 

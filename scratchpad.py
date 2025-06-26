@@ -1,4 +1,5 @@
-word1 = "can't"
-word2 = 'can\'t'
-word3 = '''can't'''
-print(word1, word2)
+class Person:
+  def __init__(self):
+    self.name = ' '
+    self.age = 0
+    self.gender = ' '
