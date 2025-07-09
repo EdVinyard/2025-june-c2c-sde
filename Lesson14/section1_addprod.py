@@ -57,11 +57,16 @@ def display_inventory():
 def add_new_product():
     print('\n **Adding A New Product To The Inventory**')
     print('------------------------------------')
+    # 2. Ask the user for the product type, price, total.
     type = input('Enter a type: ')
-    # User inputs price.  Use float() to convert from string to floating point.
-    # User inputs total count.  Use int() to convert from string to integer.
-    # Create a Product object.
-    # Add the Product's features Dictionary to the store_inventory.
+    price = 10.00
+    total = 25
+
+    # 3.
+    #     a. Call the Product initializer to create a Product.
+    #     b. Call the .features() method on the Product object.
+    #     c. Append product features to the store_inventory list.
+    # 4. Print at least the new Product ID.
 
 def remove_product():
     print('write this function')

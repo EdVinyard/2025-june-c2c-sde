@@ -4,4 +4,9 @@
 #
 # What will the following code do?
 
-price = float('Frank the Cat')
+try:
+    # many lines of code can go here
+    price = float('Frank the cat')
+except ValueError:
+    # many lines of code here
+    print('invalid price!')

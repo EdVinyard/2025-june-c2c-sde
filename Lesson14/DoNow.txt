@@ -1,14 +1,36 @@
 For each operation in the program, answer the following questions:
 -------------------------------------------------------------------------------
-1. How will the operation modify the store_inventory list?
+1. How will the operation use the store_inventory list?
+   (For example, will we Create, Read, Update, or Delete from the inventory?)
 2. What information will the user provide?
 3. What steps will I perform?
 4. What confirmation or error message will I show?
 
+Display All Products
+-------------------------------------------------------------------------------
+1. We will READ from the store_inventory list.
+2. None.
+3. Loop through the inventory item dictionaries in the store_inventory list.
+   For each inventory item, loop through the key-value pairs.
+   Print each key-value pair.
+4. None.
 
 Add a New Product
 -------------------------------------------------------------------------------
-1.
-2.
+1. Create a new Product, and Update the list by adding it.
+2. Ask the user for the product type, price, total.
 3.
-4.
+    a. Call the Product initializer to create a Product.
+    b. Call the .features() method on the Product object.
+    c. Append product features to the store_inventory list.
+4. Print at least the new Product ID.
+
+Remove a Product
+-------------------------------------------------------------------------------
+1. How will the operation use the store_inventory list? Delete
+2. What information will the user provide?  product ID (example: 1234)
+3. What steps will I perform?
+   a. Use a for loop to look through the items in store_inventory...
+   b. If the item has the same ID as the one the user entered, then...
+   d. store_inventory.remove(product_features_dict)
+4. What confirmation or error message will I show?
