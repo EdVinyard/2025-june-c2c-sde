@@ -1,0 +1,9 @@
+You've been hired to write software for a new client.
+Put the following steps in order to succeed.
+
+3    create a prototype
+5    test the software
+6    deliver the software
+2    write pseudocode
+4    write the software
+1    ask questions to understand the task
