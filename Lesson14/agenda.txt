@@ -1,0 +1,4 @@
+1. Two new type conversion functions: int() and float().
+2. Add a product to the Gen-Z Store Inventory.
+3. Remove a product from the Gen-Z Store Inventory.
+4. Write an additional feature you choose for the Gen-Z Store.
