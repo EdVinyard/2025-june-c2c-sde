@@ -1,0 +1,14 @@
+For each operation in the program, answer the following questions:
+-------------------------------------------------------------------------------
+1. How will the operation modify the store_inventory list?
+2. What information will the user provide?
+3. What steps will I perform?
+4. What confirmation or error message will I show?
+
+
+Add a New Product
+-------------------------------------------------------------------------------
+1.
+2.
+3.
+4.
