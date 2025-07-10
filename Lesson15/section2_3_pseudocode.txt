@@ -1,0 +1,23 @@
+Tell the user the rules of the game.
+Choose the word that the user will try to guess.
+
+Until the game ends...
+    Show the user the spider picture.
+    Tell the user how many guesses the have left.
+    Tell the user which letters they've guessed so far.
+    Have the user guess another letter.
+
+    If the guessed letter is in the word...
+        tell the user they're correct.
+    otherwise...
+        tell the user they're incorrect.
+
+    If the user has guessed all the letters of the word...
+        tell the user they won, and
+        end the game.
+
+    If the user ran out of guesses...
+        tell the user they lost, and
+        end the game.
+
+Show the word the user was trying to guess.

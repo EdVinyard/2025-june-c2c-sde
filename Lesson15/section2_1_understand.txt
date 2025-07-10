@@ -1,0 +1,19 @@
+ArachnoPhonics
+
+The computer will choose a random word to be the mystery word. The number of
+letters in the word should be represented to the player. The player will have to
+guess a hidden mystery word by guessing each letter, one at a time. If they
+guess the letter wrong, they will lose a life and part of a spider will appear.
+If the player makes a correct guess, that letter will appear in the proper place
+of the hidden word. Allow the player to continue the game until the spider is
+fully drawn and the player is out of attempts. The game should end if the player
+guesses the hidden word before the spider is drawn.
+
+
+Understand the Problem
+
+- Can the problem be restated in our own words?
+- What are the inputs that are needed for the problem?
+- What are the outputs that come from the problem?
+- What should the important pieces of data be labeled?
+- What clarifying questions can you ask?
