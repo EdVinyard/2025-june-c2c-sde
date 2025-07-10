@@ -21,13 +21,25 @@ def count_vowels1(words: str) -> int:
 
     return count
 
-def is_vowel(c: str) -> bool:
-    return c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u'
+def contains(string, letter):
+    '''
+    Returns `True` iff `letter` occurs at least once in the string `letters`.
+    Behaves just like `letter in letters`.
+
+    For example, given...
+        - "aeiou" and 'x', returns `False`
+        - "aeiou" and 'i', returns `True`
+    '''
+    for character in string:
+        if character == letter:
+            return True
+
+    return False
 
 def count_vowels2(words: str) -> int:
     count = 0
     for letter in words.lower():
-        if is_vowel(letter):
+        if contains('aeiou', letter):
             count += 1
 
     return count

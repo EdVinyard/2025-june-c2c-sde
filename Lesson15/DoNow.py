@@ -1,5 +1,9 @@
-def count_vowels1(words: str) -> int:
-    words = words.lower()
+def count_vowels(words: str) -> int:
+    try:
+        words = words.lower()
+    except AttributeError:
+        return 0
+
     count = 0
 
     for letter in words:
@@ -21,4 +25,15 @@ def count_vowels1(words: str) -> int:
 
     return count
 
-print(count_vowels1('Hello, World!'))
+# no vowels
+print('expect 0, counted', count_vowels(''))
+print('expect 0, counted', count_vowels('!'))
+print('expect 0, counted', count_vowels('x'))
+print('expect 0, counted', count_vowels('fly'))
+
+# some vowels
+print('expect 1, counted', count_vowels('a'))
+print('expect 3, counted', count_vowels('Hello, World!'))
+
+# errors
+print('expect 0, counted', count_vowels(None))
