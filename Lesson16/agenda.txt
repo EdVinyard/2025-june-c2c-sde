@@ -1,0 +1,4 @@
+1) aliased imports
+2) * operator for numbers and strings
+3) break statement
+4) functions as values

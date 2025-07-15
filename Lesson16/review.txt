@@ -1,0 +1,15 @@
+Given the programming task:
+
+    Write a program that asks a user for their username and
+    password.  If the user entered a known, matching username
+    and password, they will be logged in.  Otherwise, show an
+    error message, and allow the user to try again.
+
+Which word in the task description provides a CLUE about using
+each of these tools?
+
+1) if
+2) else
+3) loop
+4) print
+5) input
