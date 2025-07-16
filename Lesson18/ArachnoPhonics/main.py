@@ -26,6 +26,9 @@ INTRODUCTION = __doc__
 DIRECTORY = os.path.dirname(__file__)
 
 def clear_screen():
+    '''
+    Clear the screen.  Works on Windows and most Mac OS and Linux shells.
+    '''
     if os.name == 'nt':
         # Windows
         os.system('cls')
@@ -61,6 +64,9 @@ def random_word():
     return word
 
 def has_user_won(target_word: str, guesses: list[str]) -> bool:
+    '''
+    Returns `True` iff the user has guessed all the letters of `target_word`.
+    '''
     for letter in target_word:
         if letter not in guesses:
             return False
@@ -68,6 +74,11 @@ def has_user_won(target_word: str, guesses: list[str]) -> bool:
     return True
 
 def input_letter(guessed: list[str], prompt: str) -> str:
+    '''
+    Print the `prompt` and read a single letter of input from the user.
+    Print error messages and allow the user to retry until they input just a
+    single letter that is NOT in the list of `guessed` letters.
+    '''
     is_invalid_guess = True
     while is_invalid_guess:
         letter = input(prompt).lower()
@@ -96,7 +107,7 @@ def print_guesses_remaining(max_incorrect_guess_count, incorrect_guess_count):
 
 def extra_space(string):
     '''
-    adds a space between each letter of the supplied string
+    Adds a space between each letter of the supplied string.
 
     For example, given "RED", returns "R E D".
     '''
@@ -109,13 +120,6 @@ def extra_space(string):
             with_extra_space += ' '
 
     return with_extra_space
-
-def word_contains_letter(word, letter):
-    for l in word:
-        if l == letter:
-            return True
-
-    return False
 
 def print_guesses(guessed_letters):
     if len(guessed_letters) > 0:
@@ -142,7 +146,7 @@ def arachnophonics():
         letter_guess = input_letter(guessed_letters, 'Guess a letter. => ')
         guessed_letters.append(letter_guess)
 
-        if word_contains_letter(word, letter_guess):
+        if letter_guess in word:
             print('Correct!  "' + letter_guess + '" is in the word.')
         else:
             print('Sorry, "' + letter_guess + '" is not in the word.')

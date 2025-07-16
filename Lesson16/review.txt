@@ -1,15 +1,18 @@
-Given the programming task:
+Suppose you are assigned this programming task:
 
     Write a program that asks a user for their username and
     password.  If the user entered a known, matching username
     and password, they will be logged in.  Otherwise, show an
     error message, and allow the user to try again.
 
-Which word in the task description provides a CLUE about using
-each of these tools?
+Which specific word or phrase in the task description provides
+a CLUE about using each of these tools?
 
-1) if
-2) else
-3) loop
-4) print
-5) input
+0) if         - "If the user entered..."
+1) else       - "otherwise"
+2) for loop   - ?
+3) while loop - "again"
+4) print      -
+5) input      - "asks a user for their..."
+
+UCASE
