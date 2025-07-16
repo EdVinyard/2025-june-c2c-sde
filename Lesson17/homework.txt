@@ -1,0 +1,8 @@
+1) Replace the "stub" in functions.py with the functions you wrote today.
+   Tomorrow we'll connect all the pieces together.
+
+2) Find a way to practice programming.  Here are some (free) ideas:
+    a) https://github.com/gamontal/awesome-katas
+    b) adventofcode.com
+    b) exercism.org
+    c) codewars.com
