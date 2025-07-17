@@ -58,6 +58,7 @@ def introduction():
     clear_screen()
     print(f'Welcome to ArachnoPhonics!')
 
+
 def clear_screen():
     if os.name == 'nt':
         # Windows
