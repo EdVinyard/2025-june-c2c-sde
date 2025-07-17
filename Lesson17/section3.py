@@ -8,10 +8,10 @@ def hide_unguessed_letters(target_word: str, guessed_letters: list[str]) -> None
     result = ''
 
     # for each letter in the target_word
-        # Add the letter to the result string if it is in target_word.
-        # Add a "_" to the result string if the letter is NOT in target_word.
+        # Add the letter to a result string if it is in target_word.
+        # Add a "_" to a result string if the letter is NOT in target_word.
 
-    return result
+    return '🙁' # the result string, instead
 
 print('expecting "___"; ', hide_unguessed_letters('the', []))
 print('expecting "t__"; ', hide_unguessed_letters('the', ['t']))

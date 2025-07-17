@@ -1,7 +1,3 @@
-# Prompts user for letter guess. Checks through the secret word to see if it
-# contains the letter guessed by the user. Returns the number of wrong guesses
-# Takes in the correct letter list, incorrect letter list, secret word and the
-# number of tries as parameters.
 def check_word(correct, incorrect, word, incorrect_guess_count):
     player_guess = input('Guess a letter. ')
 
@@ -21,7 +17,5 @@ wrong = ['x', 'y', 'z']
 right = ['f', 'r']
 wrong_count = 1
 random_word = 'frank'
-
 wrong_count = check_word(right, wrong, random_word, wrong_count)
-
 print(f'You guessed wrong {wrong_count} times so far.')
