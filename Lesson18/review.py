@@ -1,21 +1,27 @@
 #------------------------------------------------------------------
 # (1) What will the following code print?
 
-x = 2
-x += 1
-x *= 10
-x -= 10
-x /= 10
-print(x)
+def earth_928():
+    superhero = "Miguel O'Hara"
+    print(superhero)
+
+def earth_65():
+    superhero = 'Gwen Stacy'
+    print(superhero)
+
+superhero = 'Peter Parker'
+earth_928()
+earth_65()
+print(superhero)
 
 #------------------------------------------------------------------
 # (2) What will the following code print?
 
-mana_points = 20
+health_points = 20
 
-if mana_points < 25:
-    mana_points -= 5
-elif mana_points >= 25:
-    mana_points += 5
+if health_points < 25:
+    health_points -= 5
+elif health_points >= 25:
+    health_points += 5
 
-print(mana_points)
+print(health_points)
